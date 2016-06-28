@@ -1,0 +1,46 @@
+Digest authentication example
+=============================
+
+Server
+------
+
+Example server I used to test digest authentication clients. I find it here: https://www.npmjs.com/package/http-auth
+
+To run the server:
+
+```
+cd server/example/
+node digest.js
+```
+
+Server will listen at `localhost:1337`
+
+Username is `vivi` password is `anna`
+
+
+Client
+------
+
+I made the same example with two different npm clients: `request` and `digest-client`
+ 
+To run first example client using `request` npm module https://www.npmjs.com/package/request do:
+
+```
+npm -g install request
+cd client/request
+node request.js
+```
+
+To run second example using `digest-client` npm module https://www.npmjs.com/package/digest-client do:
+
+```
+npm -g install digest-client
+cd client/digest-client
+node digest-client.js
+```
+
+Both clients should return the same result: `Welcome to private area Vivi!".
+
+
+
+That's it :)
