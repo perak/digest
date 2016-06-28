@@ -43,7 +43,7 @@ cd client/digest-client
 node digest-client.js
 ```
 
-Both clients should return the same result: `Welcome to private area - vivi!".
+Both clients should return the same result: `Welcome to private area - vivi!`.
 
 
 
